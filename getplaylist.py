@@ -43,19 +43,13 @@ def main():
         "Authorization": "Bearer " + token
         }).json()
         #declare object
-        sourceFile = open("track.txt", "w")
         tracks[track["track"]["name"]] = Track(track["track"]["name"], track["track"]["id"], track["track"]["artists"][0]["name"],
         track["track"]["album"]["name"], track["track"]["album"]["release_date"], track["track"]["duration_ms"], 
         track["track"]["album"]["images"][0], track_analysis["track"]["tempo"], track_analysis["beats"],
         track_analysis["bars"], track_analysis["tatums"], track_analysis["sections"], track_analysis["segments"], track_analysis["track"]["time_signature"])
-        sourceFile = open("track.txt", "w")
-        print(tracks[track["track"]["name"]].frets, file=sourceFile)
 
     for i in tracks:
         folder(tracks[i])
-
-
-    
 
 if __name__ == "__main__":
     main()

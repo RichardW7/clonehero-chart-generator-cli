@@ -24,10 +24,10 @@ def folder(track):
     ini(track, sourceFile)
     sourceFile.close()
 
-    os.system("mv /Users/richardwills/Development/clonehero-song-maker/song.ini /Users/richardwills/\"Clone Hero\"/Songs/Generated/\"" + directory + "\"/song.ini")
+    os.system("mv /Users/richardwills/Development/clonehero-chart-generator/song.ini /Users/richardwills/\"Clone Hero\"/Songs/Generated/\"" + directory + "\"/song.ini")
 
     sourceFile = open("notes.chart", "w")
     chart(track, sourceFile)
     sourceFile.close()
 
-    os.system("mv /Users/richardwills/Development/clonehero-song-maker/notes.chart /Users/richardwills/\"Clone Hero\"/Songs/Generated/\"" + directory + "\"/notes.chart")
+    os.system("mv /Users/richardwills/Development/clonehero-chart-generator/notes.chart /Users/richardwills/\"Clone Hero\"/Songs/Generated/\"" + directory + "\"/notes.chart")
