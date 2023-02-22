@@ -13,4 +13,4 @@
   - add the path of this repository (GENERATOR_PATH)
 5. Run `pip install requirements.txt`
 6. Install ffmpeg `brew install ffmpeg`
-7. Run the script
+7. Run the script `python getplaylist.py`
