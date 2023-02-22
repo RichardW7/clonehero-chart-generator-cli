@@ -13,4 +13,13 @@
   - add the path of this repository (GENERATOR_PATH)
 5. Run `pip install requirements.txt`
 6. Install ffmpeg `brew install ffmpeg`
-7. Run the script `python getplaylist.py`
+
+## How to Run
+1. Run the script `python getplaylist.py`
+2. You will be redirected to a web browser, copy the code in the url ex. `http://localhost:8888/callback?code=example_code`
+3. Back at in your terminal you should be prompted for the code, paste it
+
+## Clone Hero
+1. Navigate to Settings/General
+2. Scan Songs
+3. Find them in Quickplay
