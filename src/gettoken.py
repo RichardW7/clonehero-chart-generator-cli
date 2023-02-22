@@ -2,6 +2,7 @@ import requests
 import webbrowser
 from urllib.parse import urlencode
 import base64
+import constants
 
 AUTH_URL = 'https://accounts.spotify.com/api/token'
 
@@ -10,7 +11,7 @@ def authenticate (CLIENT_ID, CLIENT_SECRET):
     auth_headers = {
         "client_id": CLIENT_ID,
         "response_type": "code",
-        "redirect_uri": "http://localhost:8888/callback",
+        "redirect_uri": constants.REDIRECT_URI,
         "scope": "user-library-read user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control streaming playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-follow-modify user-follow-read user-read-playback-position user-top-read user-read-recently-played user-library-modify user-library-read user-read-email user-read-private" 
     }
 
@@ -28,7 +29,7 @@ def authenticate (CLIENT_ID, CLIENT_SECRET):
     token_data = {
         "grant_type": "authorization_code",
         "code": code,
-        "redirect_uri": "http://localhost:8888/callback"
+        "redirect_uri": constants.REDIRECT_URI
     }
 
     r = requests.post("https://accounts.spotify.com/api/token", data=token_data, headers=token_headers)

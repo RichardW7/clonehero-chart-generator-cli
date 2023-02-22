@@ -65,9 +65,3 @@ class Track:
             return idx
         else:
             return idx - 1
-
-    def create_spotify_uri(self):
-        return f"spotify:track:{self.id}"
-
-    # def __str__(self):
-    #     return self.name + " by " + self.artist
