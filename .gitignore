@@ -2,3 +2,4 @@
 clonehero
 .vscode
 __pycache__
+constants.py
