@@ -1,4 +1,4 @@
-# clonehero-chart-generator
+# clonehero-chart-generator-cli
 ## Setup
 1. Create a spotify developer dashboard https://developer.spotify.com/dashboard/login (this gives us access to spotify API)
 2. Add these to the constants.py file:
